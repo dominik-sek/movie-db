@@ -38,7 +38,7 @@ export default function Details(props) {
         <Navbar />
         <Wrapper>
             <h1>{movie.title}</h1>
-            <img src={movie.image} alt={movie.title} width='50%'/>
+            <img src={movie.image} alt={movie.title} width='25%'/>
             <p>{movie.content}</p>
 
         </Wrapper>
