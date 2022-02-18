@@ -15,10 +15,7 @@ export default function MovieItem(params) {
                 <Button variant="primary" className="mt-auto">
                     <Link
                         style={{ color: 'white' }}
-                        to={{ 
-                            pathname: `/details/${params.movie.id}`, 
-                            state: { dupa: params.movie.id } }}
-                            >
+                        to={`/details/${params.movie.id}`}>
 
                         Szczegóły
                     </Link>

@@ -15,6 +15,7 @@ const routeNamesLoggedIn = ["Strona główna", "Dodaj film"];
 export default function Navbar(params) {
 
     const token = localStorage.getItem('token');
+    console.log(token)
     const user = decodeToken(token);
     const [isLoggedIn, setIsLoggedIn] = React.useState(!isExpired(token) ? true : false);
     const navigate = useNavigate();
